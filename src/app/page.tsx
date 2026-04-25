@@ -11,9 +11,9 @@ import Lightbox from '@/components/ui/Lightbox'
 const familyPhotos = [
   { src: '/images/IMG_4766.JPG', alt: 'Bernhard family moment' },
   { src: '/images/IMG_1542.JPG', alt: 'Bernhard family together' },
-  { src: '/images/IMG_0882.JPEG', alt: 'Family adventure' },
+  { src: '/images/olga.jpeg', alt: 'Family adventure' },
   { src: '/images/family-wide.jpeg', alt: 'Team Bernhardt' },
-  { src: '/images/IMG_4759.JPG', alt: 'Luke Bernhard' },
+  { src: '/images/Luke Headshot.jpeg', alt: 'Luke Bernhard' },
   { src: '/images/IMG_4766.JPG', alt: 'Family portrait' },
 ]
 
@@ -35,7 +35,7 @@ const worldSections = [
   {
     title: "Olga's Corner",
     href: '/olgas-corner',
-    image: '/images/IMG_0882.JPEG',
+    image: '/images/olga.jpeg',
     desc: 'Calm with books, tropical fish, and peaceful birdwatching moments.',
     accentColor: '#2D9596',
   },
@@ -57,13 +57,13 @@ const hubSections = [
   {
     title: "Luke's Ventures",
     href: '/lukes-ventures',
-    image: '/images/IMG_4759.JPG',
+    image: '/images/Luke Headshot.jpeg',
     overlay: 'bg-navy-deep/70',
   },
   {
     title: "Olga's Corner",
     href: '/olgas-corner',
-    image: '/images/IMG_0882.JPEG',
+    image: '/images/olga.jpeg',
     overlay: 'bg-olga-teal/70',
   },
 ]
