@@ -88,16 +88,6 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           className="relative z-10 text-center px-6 max-w-4xl mx-auto"
-        >
-          <div className="flex justify-center mb-8">
-            <Image
-              width={160}
-              height={200}
-              className="drop-shadow-2xl"
-              priority
-            />
-          </div>
-          <p className="text-white/70 text-sm font-semibold tracking-[0.3em] uppercase mb-6">
             Welcome to
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 drop-shadow-2xl">
