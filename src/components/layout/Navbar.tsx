@@ -41,15 +41,6 @@ export default function Navbar() {
           className={clsx(
             'flex items-center gap-2.5 text-xl font-bold tracking-[0.15em] transition-colors duration-300',
             scrolled ? 'text-navy-deep' : 'text-white'
-          )}
-        >
-          <Image
-            width={36}
-            height={44}
-            className="h-9 w-auto" style={{mixBlendMode:"multiply"}}
-            priority
-          />
-          <span>BERNHARDT</span>
         </Link>
 
         {/* Desktop Links */}
