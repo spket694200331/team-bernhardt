@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata = {
-  title: "Lex's Arena — Team Bernhard",
+  title: "Lex's Arena — Team Bernhardt",
   description: "Soccer, karate, and Philadelphia Eagles — Lex's world in motion.",
 }
 
@@ -23,7 +23,7 @@ export default function LexsArenaPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-eagles-green/80 to-black/60" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="text-eagles-silver text-xs font-bold tracking-[0.35em] uppercase mb-6">
-            Team Bernhard
+            Team Bernhardt
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 drop-shadow-xl">
             Lex&apos;s Arena

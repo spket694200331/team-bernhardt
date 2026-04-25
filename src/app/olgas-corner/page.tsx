@@ -4,7 +4,7 @@ import { ArrowLeft, BookOpen, Fish, Bird } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata = {
-  title: "Olga's Corner — Team Bernhard",
+  title: "Olga's Corner — Team Bernhardt",
   description: "Books, fish, birds — the quiet rhythms of Olga's world.",
 }
 
@@ -23,7 +23,7 @@ export default function OlgasCornerPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-olga-wood/70 via-black/40 to-olga-teal/55" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="text-white/70 text-xs font-bold tracking-[0.35em] uppercase mb-6">
-            Team Bernhard
+            Team Bernhardt
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 drop-shadow-xl">
             Olga&apos;s Corner

@@ -12,7 +12,7 @@ const familyPhotos = [
   { src: '/images/family-1.jpg', alt: 'Bernhard family moment' },
   { src: '/images/family-2.jpg', alt: 'Bernhard family together' },
   { src: '/images/family-3.jpg', alt: 'Family adventure' },
-  { src: '/images/family-wide.jpg', alt: 'Team Bernhard' },
+  { src: '/images/family-wide.jpg', alt: 'Team Bernhardt' },
   { src: '/images/luke.jpg', alt: 'Luke Bernhard' },
   { src: '/images/family-1.jpg', alt: 'Family portrait' },
 ]
@@ -77,7 +77,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
           src="/images/family-wide.jpg"
-          alt="Team Bernhard"
+          alt="Team Bernhardt"
           fill
           className="object-cover object-center"
           priority
@@ -104,7 +104,7 @@ export default function HomePage() {
             Welcome to
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 drop-shadow-2xl">
-            Team Bernhard
+            Team Bernhardt
           </h1>
           <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
             From the soccer field and karate dojo to the halls of Liberty University. Whether
@@ -167,7 +167,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── MEET TEAM BERNHARD ─── */}
+      {/* ─── MEET TEAM BERNHARDT ─── */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
@@ -175,7 +175,7 @@ export default function HomePage() {
               About Us
             </p>
             <h2 className="text-5xl md:text-6xl font-bold text-navy-deep mb-6">
-              Meet Team Bernhard
+              Meet Team Bernhardt
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
               A vibrant family sharing passions, stories, and moments that shape our everyday life.
@@ -217,7 +217,7 @@ export default function HomePage() {
             <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/images/family-wide.jpg"
-                alt="Team Bernhard family"
+                alt="Team Bernhardt family"
                 fill
                 className="object-cover object-top"
               />

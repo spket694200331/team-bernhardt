@@ -37,7 +37,7 @@ export default function ElizabethsJourneyPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-liberty-red/85 via-liberty-navy/55 to-black/70" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="text-white/70 text-xs font-bold tracking-[0.35em] uppercase mb-6">
-            Team Bernhard
+            Team Bernhardt
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 drop-shadow-xl">
             Elizabeth&apos;s Journey
@@ -145,7 +145,7 @@ export default function ElizabethsJourneyPage() {
           <blockquote className="text-3xl md:text-5xl font-bold italic leading-tight">
             &ldquo;She runs with purpose, studies with passion, and lives with faith.&rdquo;
           </blockquote>
-          <p className="text-white/60 mt-8 text-sm tracking-[0.3em] uppercase">— Team Bernhard</p>
+          <p className="text-white/60 mt-8 text-sm tracking-[0.3em] uppercase">— Team Bernhardt</p>
         </AnimatedSection>
       </section>
 
