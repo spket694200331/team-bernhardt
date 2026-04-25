@@ -12,7 +12,7 @@ const familyPhotos = [
   { src: '/images/IMG_4766.JPG', alt: 'Bernhard family moment' },
   { src: '/images/IMG_1542.JPG', alt: 'Bernhard family together' },
   { src: '/images/IMG_0882.JPEG', alt: 'Family adventure' },
-  { src: '/images/Family wide.jpeg', alt: 'Team Bernhardt' },
+  { src: '/images/family-wide.jpeg', alt: 'Team Bernhardt' },
   { src: '/images/IMG_4759.JPG', alt: 'Luke Bernhard' },
   { src: '/images/IMG_4766.JPG', alt: 'Family portrait' },
 ]
@@ -76,7 +76,7 @@ export default function HomePage() {
       {/* ─── HERO ─── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/Family wide.jpeg"
+          src="/images/family-wide.jpeg"
           alt="Team Bernhardt"
           fill
           className="object-cover object-center"
@@ -216,7 +216,7 @@ export default function HomePage() {
           <AnimatedSection delay={0.3}>
             <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/Family wide.jpeg"
+                src="/images/family-wide.jpeg"
                 alt="Team Bernhardt family"
                 fill
                 className="object-cover object-top"

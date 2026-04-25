@@ -48,7 +48,7 @@ export default function Navbar() {
             alt="Bernhardt crest"
             width={36}
             height={44}
-            className="h-9 w-auto drop-shadow"
+            className="h-9 w-auto" style={{mixBlendMode:"multiply"}}
             priority
           />
           <span>BERNHARDT</span>
