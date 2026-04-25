@@ -133,7 +133,7 @@ export default function HomePage() {
                 src={section.image}
                 alt={section.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
               />
               <div
                 className={`absolute inset-0 ${section.overlay} opacity-0 group-hover:0
@@ -235,7 +235,7 @@ export default function HomePage() {
                         src={section.image}
                         alt={section.title}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="h-1" style={{ backgroundColor: section.accentColor }} />
