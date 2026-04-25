@@ -9,33 +9,33 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 import Lightbox from '@/components/ui/Lightbox'
 
 const familyPhotos = [
-  { src: '/images/family-1.jpg', alt: 'Bernhard family moment' },
-  { src: '/images/family-2.jpg', alt: 'Bernhard family together' },
-  { src: '/images/family-3.jpg', alt: 'Family adventure' },
-  { src: '/images/family-wide.jpg', alt: 'Team Bernhardt' },
-  { src: '/images/luke.jpg', alt: 'Luke Bernhard' },
-  { src: '/images/family-1.jpg', alt: 'Family portrait' },
+  { src: '/images/IMG_4766.JPG', alt: 'Bernhard family moment' },
+  { src: '/images/IMG_1542.JPG', alt: 'Bernhard family together' },
+  { src: '/images/IMG_0882.JPEG', alt: 'Family adventure' },
+  { src: '/images/Family wide.jpeg', alt: 'Team Bernhardt' },
+  { src: '/images/IMG_4759.JPG', alt: 'Luke Bernhard' },
+  { src: '/images/IMG_4766.JPG', alt: 'Family portrait' },
 ]
 
 const worldSections = [
   {
     title: "Lex's Arena",
     href: '/lexs-arena',
-    image: '/images/family-1.jpg',
+    image: '/images/IMG_4766.JPG',
     desc: 'High-energy soccer, karate action, and bold Philadelphia Eagles vibes.',
     accentColor: '#004C54',
   },
   {
     title: "Elizabeth's Journey",
     href: '/elizabeths-journey',
-    image: '/images/family-2.jpg',
+    image: '/images/IMG_1542.JPG',
     desc: 'Track & field strides and Liberty University pride in red and navy.',
     accentColor: '#990000',
   },
   {
     title: "Olga's Corner",
     href: '/olgas-corner',
-    image: '/images/family-3.jpg',
+    image: '/images/IMG_0882.JPEG',
     desc: 'Calm with books, tropical fish, and peaceful birdwatching moments.',
     accentColor: '#2D9596',
   },
@@ -45,25 +45,25 @@ const hubSections = [
   {
     title: "Lex's Arena",
     href: '/lexs-arena',
-    image: '/images/family-1.jpg',
+    image: '/images/IMG_4766.JPG',
     overlay: 'bg-eagles-green/70',
   },
   {
     title: "Elizabeth's Journey",
     href: '/elizabeths-journey',
-    image: '/images/family-2.jpg',
+    image: '/images/IMG_1542.JPG',
     overlay: 'bg-liberty-red/70',
   },
   {
     title: "Luke's Ventures",
     href: '/lukes-ventures',
-    image: '/images/luke.jpg',
+    image: '/images/IMG_4759.JPG',
     overlay: 'bg-navy-deep/70',
   },
   {
     title: "Olga's Corner",
     href: '/olgas-corner',
-    image: '/images/family-3.jpg',
+    image: '/images/IMG_0882.JPEG',
     overlay: 'bg-olga-teal/70',
   },
 ]
@@ -76,7 +76,7 @@ export default function HomePage() {
       {/* ─── HERO ─── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/family-wide.jpg"
+          src="/images/Family wide.jpeg"
           alt="Team Bernhardt"
           fill
           className="object-cover object-center"
@@ -92,7 +92,7 @@ export default function HomePage() {
           {/* Family crest */}
           <div className="flex justify-center mb-8">
             <Image
-              src="/images/bernhardt-crest.png"
+              src="/images/bernhardt-crest-white.png"
               alt="Bernhardt family crest"
               width={160}
               height={200}
@@ -216,7 +216,7 @@ export default function HomePage() {
           <AnimatedSection delay={0.3}>
             <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/family-wide.jpg"
+                src="/images/Family wide.jpeg"
                 alt="Team Bernhardt family"
                 fill
                 className="object-cover object-top"
