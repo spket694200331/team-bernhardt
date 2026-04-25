@@ -88,7 +88,7 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           className="relative z-10 text-center px-6 max-w-4xl mx-auto"
-            Welcome to
+            ><p className="text-white/70 text-sm font-semibold tracking-[0.3em] uppercase mb-6">Welcome to
           </p>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 drop-shadow-2xl">
             Team Bernhardt
