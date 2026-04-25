@@ -74,15 +74,15 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
         <Image
           src="/images/family-wide.jpeg"
           alt="Team Bernhardt"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center opacity-10"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-white/10 to-white/20" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
