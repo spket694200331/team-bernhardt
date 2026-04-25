@@ -74,15 +74,15 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
           src="/images/family-wide.jpeg"
           alt="Team Bernhardt"
           fill
-          className="object-cover object-center opacity-10"
+          className="object-cover object-center "
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-white/10 to-white/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/55" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -92,7 +92,6 @@ export default function HomePage() {
           {/* Family crest */}
           <div className="flex justify-center mb-8">
             <Image
-              src="/images/bernhardt-crest-white.png"
               alt="Bernhardt family crest"
               width={160}
               height={200}
@@ -149,7 +148,7 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div
-                className={`absolute inset-0 ${section.overlay} opacity-0 group-hover:opacity-100
+                className={`absolute inset-0 ${section.overlay} opacity-0 group-hover:0
                               transition-opacity duration-400 flex items-center justify-center`}
               >
                 <div className="text-center text-white">

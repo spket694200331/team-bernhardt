@@ -44,7 +44,6 @@ export default function Navbar() {
           )}
         >
           <Image
-            src="/images/bernhardt-crest.png"
             alt="Bernhardt crest"
             width={36}
             height={44}
