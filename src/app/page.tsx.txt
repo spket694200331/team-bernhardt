@@ -1,0 +1,233 @@
+'use client'
+
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import { ChevronDown, ArrowRight } from 'lucide-react'
+import { motion } from 'framer-motion'
+import AnimatedSection from '@/components/ui/AnimatedSection'
+import Lightbox from '@/components/ui/Lightbox'
+
+const familyPhotos = [
+  { src: '/images/IMG_4766.JPG', alt: 'Bernhardt family moment' },
+  { src: '/images/IMG_1542.JPG', alt: 'Bernhardt family together' },
+  { src: '/images/olga.jpeg', alt: 'Olga' },
+  { src: '/images/family-wide.jpeg', alt: 'Team Bernhardt' },
+  { src: '/images/Luke Headshot.jpeg', alt: 'Luke Bernhardt' },
+  { src: '/images/IMG_4760.JPG', alt: 'Family portrait' },
+]
+
+const worldSections = [
+  { title: "Lex's Arena", href: '/lexs-arena', image: '/images/IMG_4766.JPG', desc: 'High-energy soccer, karate action, and bold Philadelphia Eagles vibes.', accentColor: '#004C54' },
+  { title: "Elizabeth's Journey", href: '/elizabeths-journey', image: '/images/IMG_1542.JPG', desc: 'Track & field strides and Liberty University pride in red and navy.', accentColor: '#990000' },
+  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', desc: 'Calm with books, tropical fish, and peaceful birdwatching moments.', accentColor: '#2D9596' },
+]
+
+const hubSections = [
+  { title: "Lex's Arena", href: '/lexs-arena', image: '/images/IMG_4766.JPG', overlay: 'bg-eagles-green/70' },
+  { title: "Elizabeth's Journey", href: '/elizabeths-journey', image: '/images/IMG_1542.JPG', overlay: 'bg-liberty-red/70' },
+  { title: "Luke's Ventures", href: '/lukes-ventures', image: '/images/Luke Headshot.jpeg', overlay: 'bg-navy-deep/70' },
+  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', overlay: 'bg-olga-teal/70' },
+]
+
+export default function HomePage() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+
+  return (
+    <>
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <Image src="/images/family-wide.jpeg" alt="Team Bernhardt" fill className="object-cover object-center" priority />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className="relative z-10 text-center px-6 max-w-4xl mx-auto"
+        >
+          <p className="text-white/70 text-sm font-semibold tracking-[0.3em] uppercase mb-6">Welcome to</p>
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 drop-shadow-2xl">Team Bernhardt</h1>
+          <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            From the soccer field and karate dojo to the halls of Liberty University. Whether we&apos;re lost in a good book,
+            spotting rare birds, or hitting the slopes and the open water on the Sunseeker — this is our home base.
+          </p>
+          <p className="text-yellow-300/90 text-sm font-semibold tracking-[0.3em] uppercase mt-6">Семья · Вера · Успех</p>
+          <Link
+            href="#gallery"
+            className="inline-flex items-center gap-2 mt-10 px-8 py-4 bg-navy-mid hover:bg-navy-light text-white font-semibold rounded-full transition-all duration-300 text-sm tracking-wide"
+          >
+            Explore Our World <ArrowRight size={16} />
+          </Link>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.8 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce-slow"
+        >
+          <ChevronDown size={28} />
+        </motion.div>
+      </section>
+
+      {/* PHOTO GRID HUB */}
+      <section id="gallery" className="bg-cream-gray">
+        <div className="grid grid-cols-2 grid-rows-2" style={{ height: '800px' }}>
+          {hubSections.map((section) => (
+            <Link key={section.href} href={section.href} className="relative overflow-hidden group cursor-pointer">
+              <Image
+                src={section.image}
+                alt={section.title}
+                fill
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className={`absolute inset-0 ${section.overlay} opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center`}>
+                <div className="text-center text-white">
+                  <p className="text-2xl font-bold drop-shadow-lg">{section.title}</p>
+                  <p className="flex items-center justify-center gap-1 mt-2 text-sm font-medium">
+                    Explore <ArrowRight size={14} />
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* MEET TEAM BERNHARDT */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-navy-mid text-xs font-bold tracking-[0.35em] uppercase mb-4">About Us</p>
+            <h2 className="text-5xl md:text-6xl font-bold text-navy-deep mb-6">Meet Team Bernhardt</h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+              A vibrant family sharing passions, stories, and moments that shape our everyday life.
+            </p>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <AnimatedSection delay={0.1} className="bg-cream-soft rounded-2xl p-8 border border-cream-gray">
+              <div className="w-12 h-12 bg-navy-mid/10 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-bold text-navy-deep mb-3">Our Passions</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Dive into high-energy soccer and karate action with bold Philadelphia Eagles vibes.
+                From the track at Liberty University to the open water on the Sunseeker — we live life full throttle.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2} className="bg-cream-soft rounded-2xl p-8 border border-cream-gray">
+              <div className="w-12 h-12 bg-navy-mid/10 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-2xl">🏡</span>
+              </div>
+              <h3 className="text-xl font-bold text-navy-deep mb-3">Family Life</h3>
+              <p className="text-gray-600 leading-relaxed">
+                From sports thrills to cozy corners, we celebrate what makes each of us unique —
+                unified by love. Whether it&apos;s a book nook or a ski slope, we&apos;re always in it together.
+              </p>
+            </AnimatedSection>
+          </div>
+          <AnimatedSection delay={0.3}>
+            <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+              <Image src="/images/family-wide.jpeg" alt="Team Bernhardt family" fill className="object-cover object-center" />
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* OUR WORLD */}
+      <section className="bg-cream-soft py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-navy-mid text-xs font-bold tracking-[0.35em] uppercase mb-4">Explore</p>
+            <h2 className="text-5xl font-bold text-navy-deep">Our World</h2>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-3 gap-8">
+            {worldSections.map((section, i) => (
+              <AnimatedSection key={section.href} delay={i * 0.1}>
+                <Link href={section.href} className="block group">
+                  <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white">
+                    <div className="relative h-56 overflow-hidden">
+                      <Image
+                        src={section.image}
+                        alt={section.title}
+                        fill
+                        className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="h-1" style={{ backgroundColor: section.accentColor }} />
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-navy-deep mb-2">{section.title}</h3>
+                      <p className="text-gray-500 text-sm leading-relaxed mb-4">{section.desc}</p>
+                      <span className="flex items-center gap-1 text-sm font-semibold" style={{ color: section.accentColor }}>
+                        Explore <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAMILY MOMENTS */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-navy-mid text-xs font-bold tracking-[0.35em] uppercase mb-4">Gallery</p>
+            <h2 className="text-5xl font-bold text-navy-deep mb-4">Family Moments</h2>
+            <p className="text-gray-500 text-lg">Snapshots capturing joy, adventure, and togetherness.</p>
+          </AnimatedSection>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {familyPhotos.map((photo, i) => (
+              <AnimatedSection key={i} delay={i * 0.05}>
+                <button
+                  onClick={() => setLightboxIndex(i)}
+                  className="relative h-48 md:h-64 w-full rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] block"
+                >
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" />
+                </button>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="relative py-32 px-6">
+        <Image
+          src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=1600&q=80"
+          alt="Contact background"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/65" />
+        <div className="relative z-10 flex items-center justify-center">
+          <AnimatedSection className="bg-white rounded-2xl shadow-2xl p-10 md:p-14 w-full max-w-xl">
+            <h2 className="text-3xl font-bold text-navy-deep mb-2">Get In Touch</h2>
+            <p className="text-gray-500 mb-8 text-sm leading-relaxed">
+              Whether it&apos;s a question, a story, or just a hello — we&apos;d love to hear from you.
+            </p>
+            <form className="space-y-4">
+              <input type="text" placeholder="Your Name" className="border border-gray-200 rounded-lg px-4 py-3 w-full text-sm focus:ring-2 focus:ring-navy-mid focus:outline-none transition-all" />
+              <input type="email" placeholder="Email Address" className="border border-gray-200 rounded-lg px-4 py-3 w-full text-sm focus:ring-2 focus:ring-navy-mid focus:outline-none transition-all" />
+              <textarea rows={4} placeholder="Your message..." className="border border-gray-200 rounded-lg px-4 py-3 w-full text-sm focus:ring-2 focus:ring-navy-mid focus:outline-none transition-all resize-none" />
+              <button type="submit" className="w-full py-3 bg-navy-mid hover:bg-navy-light text-white font-semibold rounded-lg text-sm tracking-wide transition-colors duration-200">
+                Send Message
+              </button>
+            </form>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={familyPhotos}
+          currentIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onPrev={() => setLightboxIndex((i) => (i! > 0 ? i! - 1 : familyPhotos.length - 1))}
+          onNext={() => setLightboxIndex((i) => (i! < familyPhotos.length - 1 ? i! + 1 : 0))}
+        />
+      )}
+    </>
+  )
+}
