@@ -24,10 +24,10 @@ const worldSections = [
 ]
 
 const hubSections = [
-  { title: "Lex's Arena", href: '/lexs-arena', image: '/images/IMG_4766.JPG', overlay: 'bg-eagles-green/70' },
-  { title: "Elizabeth's Journey", href: '/elizabeths-journey', image: '/images/IMG_1542.JPG', overlay: 'bg-liberty-red/70' },
-  { title: "Luke's Ventures", href: '/lukes-ventures', image: '/images/Luke Headshot.jpeg', overlay: 'bg-navy-deep/70' },
-  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', overlay: 'bg-olga-teal/70' },
+  { title: "Lex's Arena", href: '/lexs-arena', image: '/images/IMG_4766.JPG', overlay: 'bg-eagles-green/70', objectPosition: 'object-center' },
+  { title: "Elizabeth's Journey", href: '/elizabeths-journey', image: '/images/IMG_1542.JPG', overlay: 'bg-liberty-red/70', objectPosition: 'object-[center_20%]' },
+  { title: "Luke's Ventures", href: '/lukes-ventures', image: '/images/Luke Headshot.jpeg', overlay: 'bg-navy-deep/70', objectPosition: 'object-[center_15%]' },
+  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', overlay: 'bg-olga-teal/70', objectPosition: 'object-[center_20%]' },
 ]
 
 export default function HomePage() {
@@ -78,7 +78,7 @@ export default function HomePage() {
                 src={section.image}
                 alt={section.title}
                 fill
-                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                className={`object-cover ${section.objectPosition} transition-transform duration-500 group-hover:scale-105`}
               />
               <div className={`absolute inset-0 ${section.overlay} opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center`}>
                 <div className="text-center text-white">
@@ -150,7 +150,7 @@ export default function HomePage() {
                         src={section.image}
                         alt={section.title}
                         fill
-                        className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="h-1" style={{ backgroundColor: section.accentColor }} />
@@ -184,7 +184,7 @@ export default function HomePage() {
                   onClick={() => setLightboxIndex(i)}
                   className="relative h-48 md:h-64 w-full rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] block"
                 >
-                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" />
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-[center_20%]" />
                 </button>
               </AnimatedSection>
             ))}
