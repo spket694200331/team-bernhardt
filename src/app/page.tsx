@@ -89,10 +89,8 @@ export default function HomePage() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className="relative z-10 text-center px-6 max-w-4xl mx-auto"
         >
-          {/* Family crest */}
           <div className="flex justify-center mb-8">
             <Image
-              alt="Bernhardt family crest"
               width={160}
               height={200}
               className="drop-shadow-2xl"

@@ -44,7 +44,6 @@ export default function Navbar() {
           )}
         >
           <Image
-            alt="Bernhardt crest"
             width={36}
             height={44}
             className="h-9 w-auto" style={{mixBlendMode:"multiply"}}
