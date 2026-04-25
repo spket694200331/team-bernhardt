@@ -26,8 +26,8 @@ const worldSections = [
 const hubSections = [
   { title: "Lex's Arena", href: '/lexs-arena', image: '/images/IMG_4766.JPG', overlay: 'bg-eagles-green/70', objectPosition: 'object-center' },
   { title: "Elizabeth's Journey", href: '/elizabeths-journey', image: '/images/IMG_1542.JPG', overlay: 'bg-liberty-red/70', objectPosition: 'object-[center_20%]' },
-  { title: "Luke's Ventures", href: '/lukes-ventures', image: '/images/Luke Headshot.jpeg', overlay: 'bg-navy-deep/70', objectPosition: 'object-[center_35%]' },
-  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', overlay: 'bg-olga-teal/70', objectPosition: 'object-[center_35%]' },
+  { title: "Luke's Ventures", href: '/lukes-ventures', image: '/images/Luke Headshot.jpeg', overlay: 'bg-navy-deep/70', objectPosition: 'object-[center_40%]' },
+  { title: "Olga's Corner", href: '/olgas-corner', image: '/images/olga.jpeg', overlay: 'bg-olga-teal/70', objectPosition: 'object-[center_40%]' },
 ]
 
 export default function HomePage() {
