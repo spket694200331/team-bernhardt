@@ -58,13 +58,13 @@ const hubSections = [
     title: "Luke's Ventures",
     href: '/lukes-ventures',
     image: '/images/Luke Headshot.jpeg',
-    overlay: 'bg-navy-deep/70', objectPosition: 'object-[center_35%]',
+    overlay: 'bg-navy-deep/70', objectPosition: 'object-[center_70%]',
   },
   {
     title: "Olga's Corner",
     href: '/olgas-corner',
     image: '/images/olga.jpeg',
-    overlay: 'bg-olga-teal/70', objectPosition: 'object-[center_35%]',
+    overlay: 'bg-olga-teal/70', objectPosition: 'object-[center_70%]',
   },
 ]
 
