@@ -82,7 +82,7 @@ export default function HomePage() {
           className="object-cover object-center "
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── MEET TEAM BERNHARDT ─── */}
-      <section className="bg-white py-24 px-6">
+      <section className=" py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <p className="text-navy-mid text-xs font-bold tracking-[0.35em] uppercase mb-4">
@@ -238,7 +238,7 @@ export default function HomePage() {
                 <Link href={section.href} className="block group">
                   <div
                     className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl
-                                  transition-all duration-300 hover:-translate-y-2 bg-white"
+                                  transition-all duration-300 hover:-translate-y-2 "
                   >
                     <div className="relative h-56 overflow-hidden">
                       <Image
@@ -272,7 +272,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── FAMILY MOMENTS ─── */}
-      <section className="bg-white py-24 px-6">
+      <section className=" py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <p className="text-navy-mid text-xs font-bold tracking-[0.35em] uppercase mb-4">
@@ -309,7 +309,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-navy-deep/65" />
         <div className="relative z-10 flex items-center justify-center">
-          <AnimatedSection className="bg-white rounded-2xl shadow-2xl p-10 md:p-14 w-full max-w-xl">
+          <AnimatedSection className=" rounded-2xl shadow-2xl p-10 md:p-14 w-full max-w-xl">
             <h2 className="text-3xl font-bold text-navy-deep mb-2">Get In Touch</h2>
             <p className="text-gray-500 mb-8 text-sm leading-relaxed">
               Whether it&apos;s a question, a story, or just a hello — we&apos;d love to hear from
